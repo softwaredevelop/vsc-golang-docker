@@ -1,0 +1,45 @@
+{
+	"name": "Go",
+	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+	"build": {
+		"dockerfile": "Dockerfile.alpine",
+	},
+	"settings": {
+		"code-eol": {
+			"decorateBeforeEol": true,
+			"highlightExtraWhitespace": true,
+			"highlightNonDefault": true
+		},
+		"editor": {
+			"formatOnPaste": true,
+			"formatOnSave": true,
+			"renderControlCharacters": true,
+			"renderWhitespace": "all",
+			"wordWrap": "wordWrapColumn",
+			"wordWrapColumn": 132
+		},
+		// "code-eol.decorateBeforeEol": true,
+		// "code-eol.highlightExtraWhitespace": true,
+		// "code-eol.highlightNonDefault": true,
+		// "editor.formatOnPaste": true,
+		// "editor.formatOnSave": true,
+		// "editor.renderControlCharacters": true,
+		// "editor.renderWhitespace": "all",
+		// "editor.wordWrap": "wordWrapColumn",
+		// "editor.wordWrapColumn": 132,
+		"files.associations": {
+			"*.json": "jsonc"
+		},
+		"go.gopath": "/go",
+		"go.goroot": "/usr/local/go",
+		"go.toolsManagement.checkForUpdates": "local",
+		"go.useLanguageServer": true,
+		"remote.containers.copyGitConfig": true,
+	},
+	"extensions": [
+		"editorconfig.editorconfig",
+		"golang.Go",
+		"medo64.render-crlf",
+	],
+	"remoteUser": "vscode"
+}
