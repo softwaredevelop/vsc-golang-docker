@@ -12,7 +12,7 @@ RUN mkdir --parents /home/$USERNAME/.vscode-server/extensions \
     # /home/$USERNAME/.vscode-server-insiders/extensions \
     && chown --recursive $USERNAME \
     /home/$USERNAME/.vscode-server
-# /home/$USERNAME/.vscode-server-insiders
+    # /home/$USERNAME/.vscode-server-insiders
 
 RUN apk update \
     && apk upgrade --no-cache \
